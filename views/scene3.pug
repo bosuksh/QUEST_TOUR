@@ -3,13 +3,13 @@ html
     head
         include header.pug
         script(type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=90c0910605f2adef29acb0174f022d52")
-    body(scroll="no" style="overflow: hidden; position:fixed;  width:102%")
+    body.body-small.pace-done(scroll="no" style="overflow: hidden; position:fixed; background-color:#A0D097")
         div.row(div id="map" style="width: 120%; height: 87%;")
-        div.container-fluid(style="width: 100%")
+        div.container-fluid(style="width: 104%")
             div.wrapper.wrapper-content.animated
                 div.row
                     center
-                        div.container(style="justify")
+                        div.container
                             div.col.col-xs-6.justify-content-center
                                 a.btn.btn-primary.center-block(style="width:120px; margin-right: 12px;" data-toggle="modal" href="#modal-form") 스토리 보기
                                 div.modal.fade(id="modal-form" aria-hidden="true" style="display: none;")
@@ -30,7 +30,8 @@ html
             var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
             var options = { //지도를 생성할 때 필요한 기본 옵션
                 center: new daum.maps.LatLng(37.57954825568845, 126.97705489998157), //지도의 중심좌표.
-                level: 3 //지도의 레벨(확대, 축소 정도)
+                level: 3, //지도의 레벨(확대, 축소 정도)
+                draggable: false
             };
 
             var map = new daum.maps.Map(container, options);
