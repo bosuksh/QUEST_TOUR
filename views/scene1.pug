@@ -2,20 +2,15 @@ doctype html
 html
     head
         include header.pug
-    body.body-small.pace-done(scroll="no" style="overflow: hidden; position:fixed;")
+    body.body-small.pace-done(style="height: device-height")
         div.gray-bg(id="page-wrapper")
             .row(style="margin-top: 30%;")
                 center
                     h1(style="font-size:50px;") Who killed a Prince?
                     h3.text-muted 세자를 죽인 범인을 잡아라
             
-            .row(style="margin-top: 50px;")
+            .row(style="margin-top: %;")
                 center
                     a.btn.btn-default.btn-lg.btn-rounded(href="/scene2" style="width: 200px; height: 50px;") START
 
         include script.pug
-        script.
-            $(document.body).on("touchmove", function(event) {
-                event.preventDefault();
-                event.stopPropagation();
-            });

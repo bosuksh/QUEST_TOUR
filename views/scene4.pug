@@ -1,0 +1,56 @@
+doctype html
+html
+    head
+        include header.pug
+    body.body-small.pace-done(scroll="no" style="overflow: hidden; width: 100%; position:fixed;")
+        div.gray-bg
+            .row(style="margin-top: 5px;")
+                center
+                    h1.text-center(style="font-size:50px;") HINT BOX
+                    
+            .container
+
+                div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
+                    a.btn.btn-default.btn-lg.btn-rounded(style="width:100%") WHO
+                div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
+                    a.btn.btn-default.btn-lg.btn-rounded(style="width:100%") WHERE
+                div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
+                    a.btn.btn-default.btn-lg.btn-rounded(style="width:100%") WHEN
+            div.container
+                hr(style="width: 100%; color: black; height: 1px; background-color:black;")
+            .container(style="margin-top: 10%")
+                .row(style="margin-bottom: 20px; margin-left: 15px; margin-right: 15px;")
+                    div.col-lg-2.col-md-3.col-sm-6.col-xs-6.text-center
+                        a.btn.btn-default.btn-lg.btn-rounded(style="width: 70px; height: 70px;" data-toggle="modal" href="#person1")
+                    div.col-lg-2.col-md-3.col-sm-6.col-xs-6.text-center
+                        a.btn.btn-default.btn-lg.btn-rounded(style="width: 70px; height: 70px;" data-toggle="modal" href="#person2")
+                div.row(style="margin-top: 40px; margin-bottom: 20px;")
+                    div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
+                        a.btn.btn-default.btn-lg.btn-rounded(style="width: 70px; height: 70px;" data-toggle="modal" href="#person3")
+                    div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
+                        a.btn.btn-default.btn-lg.btn-rounded(style="width: 70px; height: 70px;" data-toggle="modal" href="#person4")
+                    div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
+                        a.btn.btn-default.btn-lg.btn-rounded(style="width: 70px; height: 70px;" data-toggle="modal" href="#person5")
+
+                
+            
+            .container(style="margin-top: 10%")
+                hr(style="width: 100%; color: black; height: 1px; background-color:black;")
+                center
+                    a.btn.btn-default.btn-lg.btn-rounded.dim(style="width: 300px; height: 50px; margin-bottom: 30px;"  data-toggle="modal" href="#modal-form1") MORE HINT
+                    div.modal.fade(id="modal-form1" aria-hidden="true" style="display: none;")
+                        div.modal-dialog
+                            div.modal-content
+                                div.modal-body
+                                    div.row
+                                        p 힌트 어쩌구저쩌구
+                    a.btn.btn-default.btn-lg.btn-rounded.dim(style="width: 300px; height: 50px;"  data-toggle="modal" href="#modal-form2") ANSWER
+                    div.modal.fade(id="modal-form2" aria-hidden="true" style="display: none;")
+                        div.modal-dialog
+                            div.modal-content
+                                div.modal-body
+                                    div.row
+                                        p 정답 어쩌구저쩌구
+
+
+        include script.pug
