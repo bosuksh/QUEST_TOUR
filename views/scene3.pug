@@ -3,28 +3,28 @@ html
     head
         include header.pug
         script(type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=90c0910605f2adef29acb0174f022d52")
-    body(style="overflow-y:hidden; background-color:#008080;" scroll="no")
-        div.row(div id="map" style="width: 110%; height: 87%;")
-        .align-middle
-            center.align-middle
-                span
-                    a.btn.btn-default.btn-rounded.text-center(data-toggle="modal" href="#story" style="vertical-align: middle; width: 100px; height: 50px; margin-left: 10%; margin-right:10%; margin-top:5%") 스토리 보기
-                        div.modal(style="background: transparent" id="story" aria-hidden="true" tabindex="-1" role="dialog")
-                            .modal-dialog(role="document" style="background: transparent")
-                                .modal-content
-                                    div.modal-body
-                                        .row
-                                            p.text-muted 누가 살인을 했는데 어쩌구 저쩌구 으응 그래서 뭐 어떻게 됐다.
-                                            p.text-muted 누가 살인을 했는데 어쩌구 저쩌구 으응 그래서 뭐 어떻게 됐다.
-                                            p.text-muted 누가 살인을 했는데 어쩌구 저쩌구 으응 그래서 뭐 어떻게 됐다.
-                                            p.text-muted 누가 살인을 했는데 어쩌구 저쩌구 으응 그래서 뭐 어떻게 됐다.
-                                            p.text-muted 누가 살인을 했는데 어쩌구 저쩌구 으응 그래서 뭐 어떻게 됐다.
-                                            p.text-muted 누가 살인을 했는데 어쩌구 저쩌구 으응 그래서 뭐 어떻게 됐다.
-                                            p.text-muted 누가 살인을 했는데 어쩌구 저쩌구 으응 그래서 뭐 어떻게 됐다.
-                                    div.modal-footer
-                                        button.btn.btn-primary(type="button" data-dismiss="modal") 닫기
-                    button.btn.btn-default.btn-rounded(style="width: 100px; height: 50px; margin-left: 10%; margin-right:10%; margin-top:5%") 다음
-            
+    body(scroll="no" style="overflow: hidden; position:fixed;  width:102%")
+        div.row(div id="map" style="width: 120%; height: 87%;")
+        div.container-fluid(style="width: 100%")
+            div.wrapper.wrapper-content.animated
+                div.row
+                    center
+                        div.container(style="justify")
+                            div.col.col-xs-6.justify-content-center
+                                a.btn.btn-primary.center-block(style="width:120px; margin-right: 12px;" data-toggle="modal" href="#modal-form") 스토리 보기
+                                div.modal.fade(id="modal-form" aria-hidden="true" style="display: none;")
+                                    div.modal-dialog
+                                        div.modal-content
+                                            div.modal-body
+                                                div.row
+                                                    p 누가누가 살인을했다 그래서 어쩌구 저쩌구
+                                                    p 누가누가 살인을했다 그래서 어쩌구 저쩌구
+                                                    p 누가누가 살인을했다 그래서 어쩌구 저쩌구
+                                                    p 누가누가 살인을했다 그래서 어쩌구 저쩌구
+                                                    p 누가누가 살인을했다 그래서 어쩌구 저쩌구
+                            div.col.col-xs-6.justify-content-center
+                                a.btn.btn-primary.center-block(style="width:120px; margin-left: 12px;") NEXT
+        
         script.
 
             var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
