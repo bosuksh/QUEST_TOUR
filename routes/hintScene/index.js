@@ -2,9 +2,9 @@ const express = require('express');
 const route = express.Router();
 
 module.exports = (app) => {
-    route.route('/scene3')
+    route.route('/hintScene')
         .get((req, res) => {
-            res.render('scene3');
+            res.render('hintScene');
         })
 
     return route;

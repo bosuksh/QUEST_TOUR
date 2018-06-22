@@ -6,16 +6,26 @@ html
         div.gray-bg
             .row(style="margin-top: 5px;")
                 center
-                    h1.text-center(style="font-size:50px;") HINT BOX
+                    img(src='/assets/img/hintbox/HINT_BOX.png' style = 'margin-top: 20px')
+                    //h1.text-center(style="font-size:50px;") HINT BOX
                     
+            //.container
+            //    hr(style="width: 100%; color: black; height: 1px; background-color:black;")
+            //    div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center(style="margin-left: 0px; margin-right: 0px")
+            //        a.text-muted(style="width:100%; margin-left: 0px; margin-right: 0px;") WHO
+            //    div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center(style="margin-left: 0px; margin-right: 0px")
+            //        a.text-muted(style="width:100%; margin-left: 0px; margin-right: 0px;") WHERE
+            //    div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center(style="margin-left: 0px; margin-right: 0px")
+            //        a.text-muted(style="width:100%; margin-left: 0px; margin-right: 0px;") WHEN
             .container
+                nav.navbar-default.bg-dark
+                    div.container-fluid
+                        ul.nav.navbar-nav
+                            a.li Home
+                            a.line-e WHO
+                            a.line-e WHERE
+                            a.line-e WHEN
 
-                div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
-                    a.btn.btn-default.btn-lg.btn-rounded(style="width:100%") WHO
-                div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
-                    a.btn.btn-default.btn-lg.btn-rounded(style="width:100%") WHERE
-                div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
-                    a.btn.btn-default.btn-lg.btn-rounded(style="width:100%") WHEN
             div.container
                 hr(style="width: 100%; color: black; height: 1px; background-color:black;")
             .container(style="margin-top: 10%")
@@ -32,25 +42,24 @@ html
                     div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
                         a.btn.btn-default.btn-lg.btn-rounded(style="width: 70px; height: 70px;" data-toggle="modal" href="#person5")
 
-                
-            
-            .container(style="margin-top: 10%")
-                hr(style="width: 100%; color: black; height: 1px; background-color:black;")
+
+            .container(style="margin-top: 15px")
+                hr(style="width: 100%; color: black; height: 5px; background-color:#27375C;")
                 center
-                    a.btn.btn-default.btn-lg.btn-rounded.dim(style="width: 300px; height: 50px; margin-bottom: 30px;"  data-toggle="modal" href="#modal-form1") MORE HINT
+                    a.btn.btn-light.btn-lg.btn-rounded.dim(style="width: 280px; height: 50px; margin-bottom: 10px; background-color: #efefef; color: #27375C"   data-toggle="modal" href="#modal-form1") MORE HINT
                     div.modal.fade(id="modal-form1" aria-hidden="true" style="display: none;")
                         div.modal-dialog
                             div.modal-content
                                 div.modal-body
                                     div.row
                                         p 힌트 어쩌구저쩌구
-                    a.btn.btn-default.btn-lg.btn-rounded.dim(style="width: 300px; height: 50px;"  data-toggle="modal" href="#modal-form2") ANSWER
+
+                    a.btn.btn-light.btn-lg.btn-rounded.dim(style="width: 280px; height: 50px; background-color: #efefef; color: #27375C"  data-toggle="modal" href="#modal-form2") ANSWER
                     div.modal.fade(id="modal-form2" aria-hidden="true" style="display: none;")
                         div.modal-dialog
                             div.modal-content
                                 div.modal-body
                                     div.row
                                         p 정답 어쩌구저쩌구
-
 
         include script.pug
