@@ -5,8 +5,11 @@ html
     body.body-small.pace-done(scroll="no" style="overflow: hidden; width: 100%; position:fixed;")
         div.gray-bg
             .row(style="margin-top: 5px;")
-                center
-                    img(src='/assets/img/hintbox/HINT_BOX.png' style = 'margin-top: 20px')
+                center(style ="width: 100%;")
+                    a(href= "/hintScene")
+                        img(src='/assets/img/arrowback.svg' style = "margin-left: 10px; width: 30px; height: 30px; margin-top: 20px; margin-right:20%")  
+                    img(src='/assets/img/hintbox/HINT_BOX.png' style = 'margin-top: 20px; margin-left: 10px')
+                    span(style= "margin-left: 30%")
                     //h1.text-center(style="font-size:50px;") HINT BOX
                     
             //.container
@@ -18,23 +21,21 @@ html
             //    div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center(style="margin-left: 0px; margin-right: 0px")
             //        a.text-muted(style="width:100%; margin-left: 0px; margin-right: 0px;") WHEN
             .container
-                nav.navbar-default.bg-dark
-                    div.container-fluid
-                        ul.nav.navbar-nav
-                            a.li Home
-                            a.line-e WHO
-                            a.line-e WHERE
-                            a.line-e WHEN
+                center(style="margin-top: 15px; margin-bottom: 0px;")
+                    div.navbar-header.navbar-inverse.page-scroll.text-center(style= "background-color:  rgb(187,191,202); width: 100%" )
+                        a.navbar-brand(style= " background-color: #27375C; width: 33%; color: white" href="/scene4_Who" ) WHO
+                        a.navbar-brand(style= " width: 33%; color: #27375C" href="/scene4_Where") WHERE
+                        a.navbar-brand(style= " width: 33%; color: #27375C;" href="/scene4_When") WHEN
 
             div.container
-                hr(style="width: 100%; color: black; height: 1px; background-color:black;")
-            .container(style="margin-top: 10%")
-                .row(style="margin-bottom: 20px; margin-left: 15px; margin-right: 15px;")
+                hr(style="width: 100%; color: black; height: 5px; background-color:#27375C; margin-bottom: 0px; margin-top: 0px;")
+            .container(style="margin-top: 5%; margin-bottom: 10%")
+                .row(style="margin-top: 15%; margin-bottom: 10px; margin-left: 15px; margin-right: 15px; max-height: 200px; height: 150px")
                     div.col-lg-2.col-md-3.col-sm-6.col-xs-6.text-center
                         a.btn.btn-default.btn-lg.btn-rounded(style="width: 70px; height: 70px;" data-toggle="modal" href="#person1")
                     div.col-lg-2.col-md-3.col-sm-6.col-xs-6.text-center
                         a.btn.btn-default.btn-lg.btn-rounded(style="width: 70px; height: 70px;" data-toggle="modal" href="#person2")
-                div.row(style="margin-top: 40px; margin-bottom: 10px;")
+                div.row(style="margin-top: 0px; margin-bottom: 10px;")
                     div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
                         a.btn.btn-default.btn-lg.btn-rounded(style="width: 70px; height: 70px;" data-toggle="modal" href="#person3")
                     div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
@@ -42,7 +43,7 @@ html
                     div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
                         a.btn.btn-default.btn-lg.btn-rounded(style="width: 70px; height: 70px;" data-toggle="modal" href="#person5")
 
-
+            
             .container(style="margin-top: 15px")
                 hr(style="width: 100%; color: black; height: 5px; background-color:#27375C;")
                 center
@@ -54,7 +55,7 @@ html
                                     div.row
                                         p 힌트 어쩌구저쩌구
 
-                    a.btn.btn-light.btn-lg.btn-rounded.dim(style="width: 280px; height: 50px; background-color: #efefef; color: #27375C"  data-toggle="modal" href="#modal-form2") ANSWER
+                    a.btn.btn-light.btn-lg.btn-rounded.dim(style="width: 280px; height: 50px; background-color: #efefef; color: #27375C"  data-toggle="modal" href="/answer") ANSWER
                     div.modal.fade(id="modal-form2" aria-hidden="true" style="display: none;")
                         div.modal-dialog
                             div.modal-content

@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5f9ea22-4add-42c5-bca6-6c40b894d265" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/hintScene/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/scene3_1/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/hintScene.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/scene3_2.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/scene3/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/scene3_2/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/scene1.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/scene1.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/scene2.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/scene2.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/scene3.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/scene3_1.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/scene4.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/scene4.pug" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -57,8 +47,8 @@
       <file leaf-file-name="hintScene.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/hintScene.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="64" column="51" selection-start-line="47" selection-start-column="12" selection-end-line="64" selection-end-column="51" />
+            <state relative-caret-position="143">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -90,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.pug" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/script.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -108,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scene4.pug" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scene4.pug" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/scene4.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+            <state relative-caret-position="172">
+              <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -298,25 +288,24 @@
       <option name="presentableId" value="Default" />
       <updated>1529549521871</updated>
       <workItem from="1529549523267" duration="1502000" />
-      <workItem from="1529553549006" duration="23239000" />
+      <workItem from="1529553549006" duration="25050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24741000" />
+    <option name="totallyTimeSpent" value="26552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24305555" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14027777" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50069445" side_tool="true" visible="true" weight="0.32909784" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32909784" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" visible="true" weight="0.32909784" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" weight="0.32909784" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -455,24 +444,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/hintScene.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="64" column="51" selection-start-line="47" selection-start-column="12" selection-end-line="64" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/scene4/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/scene4.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -486,7 +461,21 @@
     <entry file="file://$PROJECT_DIR$/views/script.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/hintScene.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/scene4.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
         </state>
       </provider>
     </entry>

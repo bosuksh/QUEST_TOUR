@@ -25,19 +25,23 @@ html
 
                 div.hr.col-xs-offset-1.col-xs-8(style="width: 90%; color: black; height: 5px; background-color:#27375C; margin-top: 0px")
                 div.col-xs-3
-            .container(style="margin-top: 0%")
+            .container(style="margin-top: 5%")
                 .row(style="margin-bottom: 20px; margin-left: 15px; margin-right: 15px; justify-content: center")
-                    div.col-xs-offset-4.col-xs-4.text-center
-                        a.btn.btn-default.btn-lg.btn-rounded.text-center(style="width: 100px; height: 100px; margin-top: 0%; margin-bottom: 0%")
-                        hr(style="margin-top: 0px; margin-bottom: 10px;")
-                        text-muted(style="font-size: 13pt;") 병사
-
-                hr(style="width: 100%; color: black; height: 5px; background-color:#27375C;")
-                textarea
-                hr(style="width: 100%; color: black; height: 5px; background-color:#27375C;")
-                div.row(style="margin-top: 10px; margin-bottom: 10px;")
+                    .col-xs-1
+                        a(href="/scene4_Who")
+                            img(src= "/assets/img/hintbox.svg" style= "width: 30px; height: 30px; color: red;" )
+                    .col-xs-offset-2.col-xs-6
+                        center
+                            a.btn.btn-default.btn-lg.btn-rounded(style="width: 100px; height:100px; margin-top: 0%; margin-bottom: 0%; align-items: center; justify-content: center")
+                            hr(style="margin-top: 0px; margin-bottom: 10px;")
+                            text-muted(style=" font-size: 13pt;") 병사
+                center  
+                    hr(style="width: 90%; color: black; height: 5px; background-color:#27375C;")
+                    span(style = "color: black; font-size: 12pt;") 안녕 내이름은 김하온 직업은 트레벨러 취미는타이치 메디테이션 독서 영화시총 얼마닝러ㅏㅣㅁㄴㅇ러ㅣㅏㄴ얼ㄴ이ㅏ러
+                    hr(style="width: 90%; color: black; height: 5px; background-color:#27375C;")
+                    div.row(style="margin-top: 10px; margin-bottom: 10px;")
                     div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
-                        a.btn.btn-default.btn-lg.btn-rounded.text-center(style="width: 70px; height: 70px; background-color: #27375C; color: white" data-toggle="modal" href="#person3") 병사
+                        a.btn.btn-default.btn-lg.btn-rounded.text-center(style="width: 70px; height: 70px; background-color: #27375C; color: white;" data-toggle="modal" href="#person3") 병사
                     div.col-lg-2.col-md-3.col-sm-43456789.col-xs-4.text-center
                         a.btn.btn-default.btn-lg.btn-rounded.text-center(style="width: 70px; height: 70px; background-color: #27375C; color: white" data-toggle="modal" href="#person4")
                     div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
@@ -45,7 +49,7 @@ html
 
 
 
-            .container(style="margin-top: 10px")
+            .container(style="margin-top: 15px")
 
                 center
                     a.btn.btn-light.btn-lg.btn-rounded.dim(style="width: 280px; height: 50px; margin-bottom: 10px; background-color: #efefef; color: #27375C"   data-toggle="modal" href="#modal-form1") MORE HINT
@@ -56,7 +60,7 @@ html
                                     div.row
                                         p 힌트 어쩌구저쩌구
 
-                    a.btn.btn-light.btn-lg.btn-rounded.dim(style="width: 280px; height: 50px; background-color: #efefef; color: #27375C"  data-toggle="modal" href="#modal-form2") ANSWER
+                    a.btn.btn-light.btn-lg.btn-rounded.dim(style="width: 280px; height: 50px; background-color: #efefef; color: #27375C"  data-toggle="modal" href="/answer") ANSWER
                     div.modal.fade(id="modal-form2" aria-hidden="true" style="display: none;")
                         div.modal-dialog
                             div.modal-content

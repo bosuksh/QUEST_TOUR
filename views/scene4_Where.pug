@@ -1,0 +1,100 @@
+doctype html
+html
+    head
+        include header.pug
+    body.body-small.pace-done(scroll="no" style="overflow: hidden; width: 100%; position:fixed;")
+        div.gray-bg
+            .row(style="margin-top: 5px;")
+                center(style ="width: 100%;")
+                    a(href= "/hintScene")
+                        img(src='/assets/img/arrowback.svg' style = "margin-left: 10px; width: 30px; height: 30px; margin-top: 20px; margin-right:20%")  
+                    img(src='/assets/img/hintbox/HINT_BOX.png' style = 'margin-top: 20px; margin-left: 10px')
+                    span(style= "margin-left: 30%")
+                    
+                    
+            .container
+                center(style="margin-top: 15px; margin-bottom: 0px;")
+                    div.navbar-header.navbar-inverse.page-scroll.text-center(style= "background-color:  rgb(187,191,202); width: 100%" )
+                        a.navbar-brand(style= " width: 33%; color: #27375C" href="/scene4_Who" ) WHO
+                        a.navbar-brand(style= " background-color: #27375C; width: 33%; color: white" href="/scene4_Where") WHERE
+                        a.navbar-brand(style= " width: 33%; color: #27375C;" href="/scene4_When") WHEN
+
+            div.container
+                hr(style="width: 100%; color: black; height: 5px; background-color:#27375C; margin-bottom: 0px; margin-top: 0px;")
+            .container(style="margin-top: 5%; margin-bottom: 5%")
+                .row.animated.fadeInRight(style="margin-bottom: 20px; margin-left: 15px; margin-right: 15px; max-height: 300px; overflow:auto")
+                    .ibox.float-e-margins.border-bottom(style="margin-top: 0px; margin-bottom:0px;")
+                        div.ibox-title
+                            span
+                                a.collapse-link
+                                    span.h5(style="color:#27375C; font-size: 20px") 18:00
+                                    a.pull-right.collapse-link
+                                        i.fa.fa-chevron-down.text-muted
+                        div.ibox-content(style="display: none;")
+                            p hello world
+                    .ibox.float-e-margins.border-bottom(style="margin-top: 0px; margin-bottom:0px;")
+                        div.ibox-title
+                           span
+                                a.collapse-link
+                                    span.h5(style="color:#27375C; font-size: 20px") 19:00
+                                    a.pull-right.collapse-link
+                                        i.fa.fa-chevron-down.text-muted
+                        div.ibox-content(style="display: none;")
+                            p hello world
+                    .ibox.float-e-margins.border-bottom(style="margin-top: 0px; margin-bottom:0px;")
+                        div.ibox-title
+                            span
+                                a.collapse-link
+                                    span.h5(style="color:#27375C; font-size: 20px") 20:00
+                                    a.pull-right.collapse-link
+                                        i.fa.fa-chevron-down.text-muted
+                        div.ibox-content(style="display: none;")
+                            p hello world
+                    .ibox.float-e-margins.border-bottom(style="margin-top: 0px; margin-bottom:0px;")
+                        div.ibox-title
+                            span
+                                a.collapse-link
+                                    span.h5(style="color:#27375C; font-size: 20px") 21:00
+                                    a.pull-right.collapse-link
+                                        i.fa.fa-chevron-down.text-muted
+                        div.ibox-content(style="display: none;")
+                            p hello world
+                    .ibox.float-e-margins.border-bottom(style="margin-top: 0px; margin-bottom:0px;")
+                        div.ibox-title
+                            span
+                                a.collapse-link
+                                    span.h5(style="color:#27375C; font-size: 20px") 22:00
+                                    a.pull-right.collapse-link
+                                        i.fa.fa-chevron-down.text-muted
+                        div.ibox-content(style="display: none;")
+                            p hello world
+                    .ibox.float-e-margins.border-bottom(style="margin-top: 0px; margin-bottom:0px;")
+                        div.ibox-title
+                            span
+                                a.collapse-link
+                                    span.h5(style="color:#27375C; font-size: 20px") 23:00
+                                    a.pull-right.collapse-link
+                                        i.fa.fa-chevron-down.text-muted
+                        div.ibox-content(style="display: none;")
+                            p hello world
+            
+            .container(style="margin-top: 15px")
+                hr(style="width: 100%; color: black; height: 5px; background-color:#27375C;")
+                center
+                    a.btn.btn-light.btn-lg.btn-rounded.dim(style="width: 280px; height: 50px; margin-bottom: 10px; background-color: #efefef; color: #27375C"   data-toggle="modal" href="#modal-form1") MORE HINT
+                    div.modal.fade(id="modal-form1" aria-hidden="true" style="display: none;")
+                        div.modal-dialog
+                            div.modal-content
+                                div.modal-body
+                                    div.row
+                                        p 힌트 어쩌구저쩌구
+
+                    a.btn.btn-light.btn-lg.btn-rounded.dim(style="width: 280px; height: 50px; background-color: #efefef; color: #27375C"  data-toggle="modal" href="/answer") ANSWER
+                    div.modal.fade(id="modal-form2" aria-hidden="true" style="display: none;")
+                        div.modal-dialog
+                            div.modal-content
+                                div.modal-body
+                                    div.row
+                                        p 정답 어쩌구저쩌구
+
+        include script.pug
