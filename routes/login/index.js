@@ -6,10 +6,14 @@ module.exports = (app) => {
         .get((req, res) => {
             res.render('login');
         })
-    route.route('login').post((req,res) =>  {
+        .post((req,res) =>  {
         var uname = req.body.username;
         var pwd = req.body.password;
         if (uname == 'bosuksh' && pwd == '123123') {
+            req.session.uname = 'bosuksh';   
+            req.session.password= '123123';
+            req.session.name='Sanghyup';
+            req.session.hint1=  {'flag': 0, 'who': '사신', 'where': 5, 'when': '16:00'}
             req.redirect('/scene1');
         }
     })    
