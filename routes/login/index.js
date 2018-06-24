@@ -14,7 +14,7 @@ module.exports = (app) => {
             req.session.password= '123123';
             req.session.name='Sanghyup';
             req.session.hint1=  {'flag': 0, 'who': '사신', 'where': 5, 'when': '16:00'}
-            req.redirect('/scene1');
+            res.redirect('/scene1');
         }
     })    
     return route;
