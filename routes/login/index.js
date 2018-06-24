@@ -17,4 +17,5 @@ module.exports = (app) => {
             req.redirect('/scene1');
         }
     })    
+    return route;
 }

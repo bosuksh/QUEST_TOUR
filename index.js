@@ -16,11 +16,7 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
   cookie: { 
-      secure: true, 
-      username: 'bosuksh',
-      password: '123123',
-      name: 'Sanghyup',
-      hint1: {'flag': 0, 'who': '사신', 'where': 5, 'when': '16:00'}
+      secure: true 
   }
 }))
 
