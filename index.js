@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT;
 const pug = require('pug');
 const session = require('express-session');
 const bodyParser = require('body-parser');
@@ -53,6 +54,17 @@ const hintScene22 = require('./routes/hintScene22')(app);
 const hintScene23 = require('./routes/hintScene23')(app);
 const hintScene24 = require('./routes/hintScene24')(app);
 const hintScene25 = require('./routes/hintScene25')(app);
+const place1 = require('./routes/place1')(app);
+const place2 = require('./routes/place2')(app);
+const place3 = require('./routes/place3')(app);
+const place4 = require('./routes/place4')(app);
+const place5 = require('./routes/place5')(app);
+const place6 = require('./routes/place6')(app);
+const place7 = require('./routes/place7')(app);
+const place8 = require('./routes/place8')(app);
+const place9 = require('./routes/place9')(app);
+const place10 = require('./routes/place10')(app);
+
 
 const answer = require('./routes/answer')(app);
 const QRreader = require('./routes/QRreader')(app);
@@ -92,6 +104,18 @@ app.use(hintScene22);
 app.use(hintScene23);
 app.use(hintScene24);
 app.use(hintScene25);
+
+app.use(place1);
+app.use(place2);
+app.use(place3);
+app.use(place4);
+app.use(place5);
+app.use(place6);
+app.use(place7);
+app.use(place8);
+app.use(place9);
+app.use(place10);
+
 
 app.use(answer);
 app.use(login);
