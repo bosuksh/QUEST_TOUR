@@ -1,0 +1,72 @@
+doctype html
+html
+    head
+        include header.pug
+    body.body-small.pace-done(style=" width: 100%; ")
+        div.gray-bg
+            .row(style="margin-top: 25px;")
+                center
+                    //img(src='/assets/img/hintbox/HINT_BOX.png' style = 'margin-top: 20px')
+                    //h1.text-center(style="font-size:50px;") HINT BOX
+
+
+            .container
+                div.hr.col-xs-offset-1.col-xs-8(style="width: 90%; color: black; height: 5px; background-color:#27375C; margin-bottom: 0px")
+                div.col-offset-xs-9
+            .container
+                div.col-xs-3
+                    a.btn.btn-default.btn-rounded.text-center(style="margin-left: 0px; width: 80px; height: 80px; line-height: 60px; background-color: #27375C; color: white; font-size: 18pt" href = "/place1") 2
+                div.col-xs-8(style="margin-left: 10px; margin-right: 0px; margin-top: 10px")
+                    a.text-muted(style="width:100%; margin-left: 15px; margin-right: 0px; font-size: 20pt; color: #27375C") 근정전  
+                    a.text-muted(style="width:100%; margin-left: 15px; margin-right: 0px; font-size: 15pt; color: #27375C") GeunJeongJeon
+                div.col-xs-2
+
+            div.container
+
+                div.hr.col-xs-offset-1.col-xs-8(style="width: 90%; color: black; height: 5px; background-color:#27375C; margin-top: 0px")
+                div.col-xs-3
+            .container(style="margin-top: 5%")
+                .row(style="margin-bottom: 20px; margin-left: 15px; margin-right: 15px; justify-content: center")
+                    .col-xs-1
+                        a(href="/scene4_Who")
+                            img(src= "/assets/img/hintbox.svg" style= "width: 30px; height: 30px; color: red;" )
+                    .col-xs-offset-2.col-xs-6
+                        center
+                            a.btn.btn-default.btn-lg.btn-rounded(style="width: 100px; height:100px; margin-top: 0%; margin-bottom: 0%; align-items: center; justify-content: center")
+                            hr(style="margin-top: 0px; margin-bottom: 10px;")
+                            text-muted(style=" font-size: 13pt;") 병사1
+                center  
+                    hr(style="width: 90%; color: black; height: 5px; background-color:#27375C;")
+                    span(style = "color: black; font-size: 12pt;") 22:00시 조금 지나 병사(용의자)가 근정전에서 순찰을 돌고 있는 것을 발견하고 함께 순찰을 돌았습니다. 그리고 왕세자의 동생(용의자)께서 자정에 황급히 떠나시는 것을 봤습니다. 
+                    hr(style="width: 90%; color: black; height: 5px; background-color:#27375C;")
+                    div.row(style="margin-top: 10px; margin-bottom: 10px;")
+                    div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
+                        a.btn.btn-default.btn-lg.btn-rounded.text-center(style="width: 80px; height: 80px; line-height: 60px; background-color: #27375C; color: white;" data-toggle="modal" href="#person3") 병사<p/>동생
+                    div.col-lg-2.col-md-3.col-sm-43456789.col-xs-4.text-center
+                        a.btn.btn-default.btn-lg.btn-rounded.text-center(style="width: 80px; height: 80px; line-height: 60px; background-color: #27375C; color: white" data-toggle="modal" href="#person4") 근정전 
+                    div.col-lg-2.col-md-3.col-sm-4.col-xs-4.text-center
+                        a.btn.btn-default.btn-lg.btn-rounded.text-center(style="width: 80px; height: 80px; line-height: 60px; background-color: #27375C; color: white" data-toggle="modal" href="#person5") 22:00<p/>24:00
+
+
+
+            .container(style="margin-top: 15px")
+
+                center
+                    a.btn.btn-light.btn-lg.btn-rounded.dim(style="width: 280px; height: 50px; margin-bottom: 10px; background-color: #efefef; color: #27375C"   data-toggle="modal" href="/QRreader") QR READER
+                    div.modal.fade(id="modal-form1" aria-hidden="true" style="display: none;")
+                        div.modal-dialog
+                            div.modal-content
+                                div.modal-body
+                                    div.row
+                                        p 힌트 어쩌구저쩌구
+
+                    a.btn.btn-light.btn-lg.btn-rounded.dim(style="width: 280px; height: 50px; background-color: #efefef; color: #27375C"  data-toggle="modal" href="/answer") ANSWER
+                    div.modal.fade(id="modal-form2" aria-hidden="true" style="display: none;")
+                        div.modal-dialog
+                            div.modal-content
+                                div.modal-body
+                                    div.row
+                                        p 정답 어쩌구저쩌구
+
+
+        include script.pug
