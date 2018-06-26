@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html
+  head
+    title Instascan
+    script(type="text/javascript",src="/assets/instascan.min.js")
+  body.body-small.pace-done(scroll="no" style="overflow: hidden; position:fixed; width: 100%;" background='/assets/img/main_bg.png')
+    div
+    .row(style="margin-top: 30%;")
+        center
+            img(src = '/assets/img/camera.png' style = "width: 150px; height: 150px; background-color: white;")
+        center
+            video(id="preview" style = "width: 800px; height: 800px;")
+        center
+            text(style = "color: white; font-size: 40pt;") Take QR Code!
+    script(type='text/javascript').
+      let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+      scanner.addListener('scan', function (content) {
+        console.log(content);
+      });
+      Instascan.Camera.getCameras().then(function (cameras) {
+        if (cameras.length > 0) {
+          scanner.start(cameras[0]);
+        } else {
+          console.error('No cameras found.');
+        }
+      }).catch(function (e) {
+        console.error(e, e.stack);
+      });  
