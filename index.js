@@ -123,7 +123,7 @@ app.use(QRreader);
 
 
 app.get('/', (req, res) => {
-    res.redirect('/login');
+    res.redirect('/QRreader');
 })
 
 app.listen(3000, () => {
